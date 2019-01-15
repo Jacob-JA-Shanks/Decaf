@@ -3,7 +3,8 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
         xmlns:local="clr-namespace:Decaf"
         mc:Ignorable="d"
         Title="Decaf" Height="450" Width="800"
@@ -11,16 +12,16 @@
         TitleCharacterCasing="Normal" Icon="Assets\DecafMetro.ico" IconBitmapScalingMode="NearestNeighbor" BorderThickness="0">
     <Grid>
         <Menu HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="792">
-            <MenuItem Header="File">
-                <MenuItem Header="New LiteDB"/>
-                <MenuItem Header="Open LiteDB"/>
+            <MenuItem Header="File" >
+                <MenuItem Header="New LiteDB" Icon="{iconPacks:Modern PageNew}"/>
+                <MenuItem Header="Open LiteDB" Icon="{iconPacks:Modern Folder}"/>
                 <Separator/>
-                <MenuItem Header="Save"/>
-                <MenuItem Header="Save As..."/>
+                <MenuItem Header="Save" Icon="{iconPacks:Modern Save}"/>
+                <MenuItem Header="Save As..." Icon="{iconPacks:Modern Disk}"/>
                 <Separator/>
-                <MenuItem Header="Close LiteDB"/>
+                <MenuItem Header="Close LiteDB" Icon="{iconPacks:Modern Close}"/>
                 <Separator/>
-                <MenuItem Header="Quit"/>
+                <MenuItem Header="Quit" Icon="{iconPacks:Modern DoorLeave}"/>
             </MenuItem>
             <MenuItem Header="Edit">
             </MenuItem>
